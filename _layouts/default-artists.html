@@ -1,0 +1,53 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Artists | {{ site.title }}</title>
+        {% if page.desc %}<meta name="description" content="{{ page.desc }}">{% else %}
+        <meta name="description" content="Browse our categorised Down South Entertainment artist pages, read about our artists and listen to some fine audio samples!">{% endif %}
+        <meta name="author" content="{{ site.name }}">
+
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
+        <meta name="google-site-verification" content="rzj7f83EAHcgO2fRGST2rXEY9BglBn6gwXahjWDxl9g">
+
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+        <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+        <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+        <meta property="og:description" content="{% if page.desc %}{{ page.desc | strip_html | strip_newlines | truncate: 160 }}">{% else %}
+        <meta name="description" content="Browse our categorised Down South Entertainment artist pages, read about our artists and listen to some fine audio samples!">{% endif %}
+        <meta property="og:site_name" content="{{ site.title }}">
+        <meta property="og:locale" content="{{ site.locale }}">
+
+        <link rel="stylesheet" href="{{ "/css/all.css" | prepend: site.baseurl }}">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/site-img/waves.png">
+    </head>
+<body>
+
+    {% include header.html %}
+
+    <div class="banner banner-artists">
+        <div class="banner-logo"></div>
+    </div>
+
+    <article id="main-article" class="clearfix">
+
+        <section class="tagline wrapper clearfix">
+            <h2>Your southwest connection to music &amp; good times!</h2>
+        </section>
+
+        {{ content }}
+
+    </article>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

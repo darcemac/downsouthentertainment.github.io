@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% if page.title == 'Home' %}{{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title> 
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.name }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
+    <meta name="google-site-verification" content="rzj7f83EAHcgO2fRGST2rXEY9BglBn6gwXahjWDxl9g">
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="{{ site.locale }}">
+
+    <link rel="stylesheet" href="{{ "/css/all.css" | prepend: site.baseurl }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/site-img/waves.png">
+</head>

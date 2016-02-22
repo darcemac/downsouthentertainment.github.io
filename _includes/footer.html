@@ -1,0 +1,34 @@
+<footer>
+  <div id="footer-inner">
+    <div class="footer-info clearfix">
+      <div class="copyright">
+        <p>© 2014 Down South Entertainment / <span class="design-link">Site by <a href="http://www.blueskyatnight.com.au">Blueskyatnight</a></span></p>
+      </div>
+      <div class="social-links">
+       <ul>
+        <li><a href="http://www.facebook.com/musicandgoodtimes"><img src="{{ "/images/site-img/f-book.png" | prepend: site.baseurl }}" class="social"></a></li> 
+        <li><a href="https://vimeo.com/user31351431"><img src="{{ "/images/site-img/vim.png" | prepend: site.baseurl }}" class="social"></a></li>  
+      </ul>
+    </div>
+  </div>
+</footer>
+
+{% if site.baseurl == "" %}
+<script>
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "/js/all.js";
+    document.body.appendChild(element);}
+    if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script> 
+{% endif %}
+
+
+
+
+
+

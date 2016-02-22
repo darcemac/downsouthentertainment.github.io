@@ -1,0 +1,113 @@
+title: Down South Entertainment | Margaret River
+email: lee@downsouthentertainment.com.au
+description: > # this means to ignore newlines until "baseurl:"
+  A music and entertainment agency in Margaret River, Western Australia.
+baseurl: ""
+url: 'http://downsouthentertainment.com.au'
+
+# Where things are
+source:      .
+destination: ./_site
+plugins_dir:  ./_plugins
+layouts_dir:     ./_layouts
+data_dir: ./_data
+includes_dir: ./_includes
+collections: null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:      []
+
+# Conversion
+markdown:    kramdown
+excerpt_separator: "\n\n"
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+
+quiet:    false
+defaults: []
+
+# Backwards-compatibility
+relative_permalinks: false
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Prose settings
+prose:
+  siteurl: "http://downsouthentertainment.com.au"
+  media: "images"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "text"
+          label: "Layout: artists, feature"
+          placeholder: "Choose Layout"
+          value: ""
+          type: "text"
+      - name: "category"
+        field:
+          element: "text"
+          label: "Category: solo, dj, feature, band, special"
+          placeholder: "Choose Category"
+          value: ""
+          type: "text"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image, e.g. /images/your_image.jpg"
+          placeholder: "Select your image"
+          value: "/images/"
+          type: "text"
+      - name: "desc"
+        field:
+          element: "text"
+          label: "description - Google SEO 160 characters"
+          placeholder: "Add Description"
+          value: ""
+          type: "text"
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+
+
+
+

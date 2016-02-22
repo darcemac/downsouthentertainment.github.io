@@ -1,0 +1,26 @@
+---
+layout: testimonials
+---
+
+<section class="artists listings wrapper">
+
+	<h2 class="section-artist-title">Testimonials</h2>
+	<div class="post center">
+
+		<div class="testimonials-post">
+
+			{% for post in site.categories.testimonial %}
+
+				<h3>{{ post.name }}</h3>
+
+				{{ post.content }}
+
+				<div class="divider"></div>
+
+			{% endfor %}
+
+		</div>
+
+	</div>
+
+</section>

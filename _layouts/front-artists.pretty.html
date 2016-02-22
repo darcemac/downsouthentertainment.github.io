@@ -1,0 +1,180 @@
+--- layout: default-artists ---
+
+<section class="artists wrapper">
+
+    <h2 class="section-artist-title">Artists</h2>
+
+    <!-- artist content -->
+    <div class="artist-content idTabs">
+
+        <nav id="center-nav">
+            <ul>
+                <li><a href="#solo" class="selected">Solo</a></li>
+                <li><a href="#duo">Duo</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#dj">DJ</a></li>
+                <li><a href="#special">Something Special</a></li>
+                <!-- <li><a href="#tech">Sound & Lighting</a></li> -->
+            </ul>
+        </nav>
+
+        <nav id="center-nav">
+            <ul>
+                <li>
+                    <a href='{{site.baseurl}}/solo'>
+
+                        <p>Solo</p>
+                    </a>
+                </li>
+                <li>
+                    <a href='{{site.baseurl}}/duo'>
+
+                        <p>Duo</p>
+                    </a>
+                </li>
+                <li>
+                    <a href='{{site.baseurl}}/band'>
+
+                        <p>Band</p>
+                    </a>
+                </li>
+                <li>
+                    <a href='{{site.baseurl}}/DJ'>
+
+                        <p>DJ</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="solo">
+            <ul class="grid featured-work">
+                {% for post in site.categories.solo %} {% if forloop.index == 7 %}
+            </ul>
+            <ul class="grid featured-work hidden-post">
+
+                {% endif %}
+
+                <li class="grid-block fade">
+
+                    <a href="{{ post.url }}"><img src="{{ post.image }}" title="{{ post.title }} thumb image" /></a>
+                    <h3>{{ post.title }}</h3>
+
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="more-link">
+                <a class="button expand" href="">More Artists</a>
+            </div>
+        </div>
+
+        <div id="duo">
+            <ul class="grid featured-work">
+                {% for post in site.categories.duo %} {% if forloop.index == 7 %}
+            </ul>
+            <ul class="grid featured-work hidden-post">
+
+                {% endif %}
+
+                <li class="grid-block fade">
+
+                    <a href="{{ post.url }}"><img src="{{ post.image }}" title="{{ post.title }} thumb image" /></a>
+                    <h3>{{ post.title }}</h3>
+
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="more-link">
+                <a class="button expand" href="">More Artists</a>
+            </div>
+        </div>
+
+        <div id="band">
+            <ul class="grid featured-work">
+                {% for post in site.categories.band %} {% if forloop.index == 7 %}
+            </ul>
+            <ul class="grid featured-work hidden-post">
+
+                {% endif %}
+
+                <li class="grid-block fade">
+
+                    <a href="{{ post.url }}"><img src="{{ post.image }}" title="{{ post.title }} thumb image" /></a>
+                    <h3>{{ post.title }}</h3>
+
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="more-link">
+                <a class="button expand" href="">More Artists</a>
+            </div>
+        </div>
+
+        <div id="dj">
+            <ul class="grid featured-work">
+                {% for post in site.categories.dj %} {% if forloop.index == 7 %}
+            </ul>
+            <ul class="grid featured-work hidden-post">
+
+                {% endif %}
+
+                <li class="grid-block fade">
+
+                    <a href="{{ post.url }}"><img src="{{ post.image }}" title="{{ post.title }} thumb image" /></a>
+                    <h3>{{ post.title }}</h3>
+
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="more-link">
+                <a class="button expand" href="">More Artists</a>
+            </div>
+        </div>
+
+        <div id="special">
+            <ul class="grid featured-work">
+                {% for post in site.categories.special %} {% if forloop.index == 7 %}
+            </ul>
+            <ul class="grid featured-work hidden-post">
+
+                {% endif %}
+
+                <li class="grid-block fade">
+
+                    <a href="{{ post.url }}"><img src="{{ post.image }}" title="{{ post.title }} thumb image" /></a>
+                    <h3>{{ post.title }}</h3>
+
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="more-link">
+                <a class="button expand" href="">More Artists</a>
+            </div>
+        </div>
+
+        <!-- <div id="tech">	
+			<ul class="grid featured-work">
+				{% for post in site.categories.tech %}
+				{% if forloop.index == 7 %}
+			</ul>
+			<ul class="grid featured-work hidden-post">
+
+				{% endif %}
+
+				<li class="grid-block fade">
+	
+					<a href="{{ post.url }}"><img src="{{ post.image }}" title="{{ post.title }} thumb image" /></a>
+					<h3>{{ post.title }}</h3>
+					
+				</li>
+				{% endfor %}
+			</ul>
+			<div class="more-link">
+				<a class="button expand" href="">More Artists</a>
+			</div>	
+		</div> -->
+
+    </div>
+    <!-- /artist content -->
+
+</section>

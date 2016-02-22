@@ -1,0 +1,37 @@
+---
+layout: default-artists
+---
+
+<section class="listings wrapper">
+
+	<div id="post">
+		<div>
+			<h3>{{ page.title }}</h3>
+
+			{{ content }}
+
+		</div>
+	</div>
+
+	<div class="divider"></div>
+
+	<div class="links">
+		<div class="back-link">
+			<a href="/artists/">← To Artists</a>
+		</div>
+		<div class="enquiry-link">
+			<a href="/contact/">Booking Enquiry</a>
+		</div>
+	</div>
+
+	<div class="span_2_of_2 center">
+		<div class="pageNavigation">
+			<h3>DSE Artists</h3>
+
+			{% if page.previous.url %}<a href="{{ page.previous.url }}">← {{ page.previous.title }}</a>{% endif %}
+			{% if page.previous.url and page.next.url %}&nbsp;//&nbsp;{% endif %}
+			{% if page.next.url %}<a href="{{ page.next.url }}">{{ page.next.title }} →</a>{% endif %}
+		</div>
+	</div>
+
+</section>

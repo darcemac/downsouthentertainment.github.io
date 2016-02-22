@@ -1,0 +1,30 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+
+        {% include header.html %}
+
+        <div class="banner banner-home">
+            <div class="banner-logo"></div>
+        </div>
+
+        <article id="main-article" class="clearfix">
+            <section class="tagline wrapper clearfix">
+                <h2>Your southwest connection to music &amp; good times!</h2>
+            </section>
+
+            {{ content }}
+
+        </article>
+
+        {% include footer.html %}
+
+    </body>
+
+</html>
