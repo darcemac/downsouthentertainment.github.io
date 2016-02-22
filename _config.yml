@@ -3,7 +3,7 @@ email: lee@downsouthentertainment.com.au
 description: > # this means to ignore newlines until "baseurl:"
   A music and entertainment agency in Margaret River, Western Australia.
 baseurl: ""
-url: 'http://downsouthentertainment.com.au'
+url: 'http://downsouthentertainment.com.au/'
 
 # Where things are
 source:      .
@@ -31,10 +31,12 @@ port:    4000
 host:    0.0.0.0
 
 # Backwards-compatibility
-relative_permalinks: false
+# relative_permalinks: false
 
 # Outputting
-permalink:     date
+# permalink:     date
+
+permalink: /:title
 paginate_path: /page:num
 timezone:      null
 
