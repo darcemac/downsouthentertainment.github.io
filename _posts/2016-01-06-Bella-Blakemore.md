@@ -4,8 +4,9 @@ layout: artists
 category: solo
 image: /images/bella.jpg
 desc: "Bella Blakemore has been charming the South West for several years now with her evocative, powerful vocal style and cheerful, accommodating nature."
----
 
+permalink: /:year-:month-:day-:title/
+---
 
 ![bella.jpg](/images/bella.jpg)
 

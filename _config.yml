@@ -43,15 +43,15 @@ host:    127.0.0.1
 baseurl: "" # does not include hostname
 
 # Outputting
-permalink:     date
+#permalink:     date
+
+permalink: pretty
+
 paginate_path: /page:num
 timezone:      null
 
 quiet:    false
 defaults: []
-
-# Backwards-compatibility
-relative_permalinks: false
 
 # Markdown Processors
 rdiscount:
@@ -67,6 +67,7 @@ kramdown:
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
 
 # Prose settings
 prose:
