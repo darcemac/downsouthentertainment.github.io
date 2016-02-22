@@ -8,10 +8,8 @@ url: 'http://downsouthentertainment.com.au'
 # Where things are
 source:      .
 destination: ./_site
-plugins_dir:  ./_plugins
-layouts_dir:  ./_layouts
-data_dir:  ./_data
-includes_dir:  ./_includes
+layouts:     ./_layouts
+data_source: ./_data
 collections: null
 
 # Handling Reading
@@ -21,16 +19,7 @@ exclude:      []
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      false
-unpublished: false
-
-# Plugins
-whitelist: []
-gems:      []
+textile_ext:  "textile"
 
 # Conversion
 markdown:    kramdown
@@ -39,34 +28,15 @@ excerpt_separator: "\n\n"
 # Serving
 detach:  false
 port:    4000
-host:    127.0.0.1
-baseurl: "" # does not include hostname
+host:    0.0.0.0
 
 # Backwards-compatibility
 relative_permalinks: false
 
 # Outputting
-permalink:     /posts/:year/:month/:title
+permalink:     date
 paginate_path: /page:num
 timezone:      null
-
-quiet:    false
-defaults: []
-
-# Markdown Processors
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
 # Prose settings
 prose:
@@ -77,14 +47,14 @@ prose:
       - name: "layout"
         field:
           element: "text"
-          label: "Layout: artists, feature"
+          label: "Layout: artists, feature, testimonials"
           placeholder: "Choose Layout"
           value: ""
           type: "text"
       - name: "category"
         field:
           element: "text"
-          label: "Category: solo, dj, feature, band, special"
+          label: "Category: solo, dj, feature, band, special, testimonial"
           placeholder: "Choose Category"
           value: ""
           type: "text"
@@ -107,7 +77,3 @@ prose:
           label: "Published"
           element: "checkbox"
           value: "true"
-
-
-
-
