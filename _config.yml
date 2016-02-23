@@ -2,7 +2,7 @@ title: Down South Entertainment | Margaret River
 email: lee@downsouthentertainment.com.au
 description: > # this means to ignore newlines until "baseurl:"
   A music and entertainment agency in Margaret River, Western Australia.
-baseurl: ""
+baseurl: downsouthentertainment.github.io
 url: 'http://downsouthentertainment.com.au'
 
 # Where things are
