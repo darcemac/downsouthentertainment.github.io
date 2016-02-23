@@ -7,10 +7,10 @@ url: 'http://downsouthentertainment.com.au'
 
 # Where things are
 source:      .
-destination: ./_site
-layouts_dir:     ./_layouts
+destination:  ./_site
+layouts_dir:  ./_layouts
 data_dir: ./_data
-collections: null
+collections:  null
 
 # Handling Reading
 safe:         false
