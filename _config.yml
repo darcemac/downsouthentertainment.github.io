@@ -37,7 +37,8 @@ host:    0.0.0.0
 relative_permalinks: false
 
 # Outputting
-permalink: pretty
+# permalink: pretty
+permalink: /artists/:title/
 paginate_path: /page:num
 timezone:      null
 
