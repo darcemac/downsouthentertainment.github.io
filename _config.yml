@@ -39,7 +39,7 @@ relative_permalinks: false
 # Outputting
 # permalink: pretty
 
-permalink: /:year/:month/:title
+permalink: /:title/
 paginate_path: /page:num
 timezone:      null
 
