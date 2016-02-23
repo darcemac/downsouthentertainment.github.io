@@ -37,8 +37,7 @@ host:    0.0.0.0
 relative_permalinks: false
 
 # Outputting
-# permalink:     date
-permalink: /:title
+permalink: pretty
 paginate_path: /page:num
 timezone:      null
 
